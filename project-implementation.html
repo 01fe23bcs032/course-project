@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project Implementation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project-implementation.css">
+</head>
+<body>
+
+<!-- FLOATING ICONS -->
+<div class="floating-icons">
+    <span>⚙️</span>
+    <span>💻</span>
+    <span>📊</span>
+    <span>🧩</span>
+    <span>🔐</span>
+</div>
+
+<div class="container">
+
+    <!-- PAGE HEADER -->
+    <h1 class="page-title">Project Implementation</h1>
+    <p class="subtitle">
+        Technical architecture combined with user journey workflows.
+    </p>
+
+    <!-- MODULE 1 -->
+    <section class="module red">
+        <div class="module-header">
+            <h2>🔐 Module 1: User Access & Authentication</h2>
+            <div class="tags">
+                <span>NextAuth v5</span>
+                <span>Bcrypt</span>
+                <span>Role-Based Access</span>
+            </div>
+        </div>
+
+        <div class="grid-two">
+            <div>
+                <h3>Technical Implementation</h3>
+                <p>
+                    A secure authentication system was implemented using NextAuth.js
+                    with a credentials provider. Passwords are hashed using bcrypt
+                    before storage. Middleware protects sensitive routes by validating
+                    session tokens prior to page access.
+                </p>
+
+                <h4>Key Components</h4>
+                <ul>
+                    <li><code>auth.ts</code> – JWT session configuration</li>
+                    <li><code>middleware.ts</code> – Route protection</li>
+                    <li><code>/api/auth/register</code> – User registration</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>User Journey: Getting Started</h3>
+                <ol>
+                    <li><strong>Registration:</strong> Student signs up with college email.</li>
+                    <li><strong>Login:</strong> Secure session created on success.</li>
+                    <li><strong>Role Routing:</strong> Redirect based on Student/Staff role.</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODULE 2 -->
+    <section class="module blue">
+        <div class="module-header">
+            <h2>📅 Module 2: Core Booking Engine</h2>
+            <div class="tags">
+                <span>Prisma ORM</span>
+                <span>Transactional Logic</span>
+                <span>Interactive Grid</span>
+            </div>
+        </div>
+
+        <div class="grid-two">
+            <div>
+                <h3>Technical Implementation</h3>
+                <p>
+                    Prisma ORM defines relationships between Users, Courts, and Bookings.
+                    A unique database constraint on courtId, date, and startTime ensures
+                    double booking is physically prevented at the database level.
+                </p>
+
+                <h4>Key Components</h4>
+                <ul>
+                    <li>Booking Page – Slot selection grid</li>
+                    <li><code>POST /api/bookings</code> – Transaction handler</li>
+                    <li><code>schema.prisma</code> – Constraints & relations</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>User Journey: Making a Reservation</h3>
+                <ol>
+                    <li>Select sport and date.</li>
+                    <li>Choose available time slot.</li>
+                    <li>Instant confirmation with Booking ID.</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODULE 3 -->
+    <section class="module yellow">
+        <div class="module-header">
+            <h2>👤 Module 3: User Dashboard & Profile</h2>
+            <div class="tags">
+                <span>React Components</span>
+                <span>Data Visualization</span>
+                <span>Responsive UI</span>
+            </div>
+        </div>
+
+        <div class="grid-two">
+            <div>
+                <h3>Technical Implementation</h3>
+                <p>
+                    A centralized dashboard fetches booking history using server actions.
+                    Reusable components ensure responsiveness across devices and
+                    real-time status updates.
+                </p>
+
+                <h4>Key Components</h4>
+                <ul>
+                    <li>Profile Page – Tab-based navigation</li>
+                    <li>booking-history.tsx – Booking table</li>
+                    <li>active-penalties.tsx – Rule enforcement</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>User Journey: Managing Activities</h3>
+                <ol>
+                    <li>View profile summary.</li>
+                    <li>Track upcoming & past bookings.</li>
+                    <li>Check penalties or restrictions.</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODULE 4 -->
+    <secti
