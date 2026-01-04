@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Problem Analysis & Requirements</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="problem-analysis.css">
+</head>
+<body>
+
+<!-- FLOATING ICONS -->
+<div class="floating-icons">
+    <span>📋</span>
+    <span>⚙️</span>
+    <span>📊</span>
+    <span>🧩</span>
+    <span>💻</span>
+</div>
+
+<div class="container">
+
+    <!-- PAGE HEADING -->
+    <h1 class="page-title">Problem Analysis & Requirements</h1>
+    <p class="subtitle">Specifications, Sprints, and Agile Methodology</p>
+
+    <!-- SCRUM ROLES -->
+    <section class="section">
+        <h2>Scrum Roles</h2>
+
+        <div class="grid-three">
+            <div class="card accent-red">
+                <h3>Product Owner</h3>
+                <p class="member">Pratyaksh Kaushik</p>
+                <ul>
+                    <li>Define product vision & features</li>
+                    <li>Prioritize product backlog</li>
+                    <li>Accept/reject completed work</li>
+                    <li>Stakeholder communication</li>
+                    <li>ROI maximization</li>
+                </ul>
+            </div>
+
+            <div class="card accent-blue">
+                <h3>Scrum Master</h3>
+                <p class="member">Sanika Madihal</p>
+                <ul>
+                    <li>Facilitate Scrum ceremonies</li>
+                    <li>Remove impediments</li>
+                    <li>Coach team on Agile</li>
+                    <li>Protect team from disruptions</li>
+                    <li>Foster continuous improvement</li>
+                </ul>
+            </div>
+
+            <div class="card accent-yellow">
+                <h3>Development Team</h3>
+                <p class="member">Aditi C, Shreyas A, Vishruth H,<br>Samarth M, Drishti N</p>
+                <ul>
+                    <li>Design & develop features</li>
+                    <li>Write & execute tests</li>
+                    <li>Deploy & maintain code</li>
+                    <li>Self-organize work</li>
+                    <li>Participate in ceremonies</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- SPRINTS -->
+    <section class="section">
+        <h2>Sprints & User Stories</h2>
+
+        <div class="card sprint">
+            <span class="badge">Sprint 1 (2 Weeks)</span>
+            <h3>Authentication & Basic Viewing</h3>
+
+            <div class="grid-two">
+                <div class="story">
+                    <span class="priority high">High</span>
+                    <h4>User Registration (5 pts)</h4>
+                    <p>As a student, I want to register using my college email.</p>
+                    <ul>
+                        <li>Register with name, email, password, phone, student ID</li>
+                        <li>Real-time validation & email verification</li>
+                        <li>Password strength enforcement</li>
+                    </ul>
+                </div>
+
+                <div class="story">
+                    <span class="priority medium">Medium</span>
+                    <h4>User Login (3 pts)</h4>
+                    <p>As a registered user, I want to login securely.</p>
+                    <ul>
+                        <li>Secure authentication with error handling</li>
+                        <li>Session management</li>
+                        <li>Redirect to dashboard</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="card sprint">
+            <span class="badge">Sprint 2 (2 Weeks)</span>
+            <h3>Core Booking Functionality</h3>
+
+            <div class="grid-two">
+                <div class="story">
+                    <span class="priority critical">Critical</span>
+                    <h4>Book a Time Slot (13 pts)</h4>
+                    <ul>
+                        <li>Prevent double bookings</li>
+                        <li>Date/time validation</li>
+                        <li>Instant confirmation email</li>
+                    </ul>
+                </div>
+
+                <div class="story">
+                    <span class="priority high">High</span>
+                    <h4>View My Bookings (5 pts)</h4>
+                    <ul>
+                        <li>View booking history</li>
+                        <li>Color-coded booking status</li>
+                        <li>Search and filter bookings</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="card sprint">
+            <span class="badge">Sprint 3 (2 Weeks)</span>
+            <h3>Admin Dashboard & Reports</h3>
+
+            <div class="grid-two">
+                <div class="story">
+                    <span class="priority high">High</span>
+                    <h4>Admin Dashboard (8 pts)</h4>
+                    <ul>
+                        <li>Manage bookings and users</li>
+                        <li>Advanced filters</li>
+                        <li>Audit trail for changes</li>
+                    </ul>
+                </div>
+
+                <div class="story">
+                    <span class="priority medium">Medium</span>
+                    <h4>Usage Reports (8 pts)</h4>
+                    <ul>
+                        <li>Utilization reports</li>
+                        <li>Peak usage identification</li>
+                        <li>Export reports</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NON FUNCTIONAL REQUIREMENTS -->
+    <section class="section">
+        <div class="card highlight-card">
+            <h2>Non-Functional Requirements</h2>
+
+            <div class="grid-two">
+                <ul>
+                    <li><strong>Performance:</strong> Load within 2s, 100+ users</li>
+                    <li><strong>Responsiveness:</strong> Mobile-first UI</li>
+                </ul>
+                <ul>
+                    <li><strong>Security:</strong> Encryption, JWT, HTTPS</li>
+                    <li><strong>Reliability:</strong> 99.5% uptime, backups</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- FUNCTIONAL SUMMARY -->
+    <section class="section">
+        <div class="card">
+            <h2>Functional Requirements Summary</h2>
+            <ul class="checklist">
+                <li>User registration with verification</li>
+                <li>Secure authentication and session management</li>
+                <li>Real-time court availability</li>
+                <li>Slot booking and cancellation</li>
+                <li>Admin dashboard and analytics</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- USE CASE DIAGRAM SPACE -->
+    <section class="section">
+        <div class="card diagram-card">
+            <h2>Use Case Diagram – User Registration</h2>
+            <div class="diagram-placeholder">
+                <p>Use Case Diagram will be added here</p>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
