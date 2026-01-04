@@ -83,15 +83,22 @@ body {
     line-height: 1.7;
 }
 
-/* DIAGRAM PLACEHOLDER */
-.diagram-box {
-    height: 320px;
+/* DIAGRAM CONTAINER (FOR IMAGES) */
+.diagram-container {
+    margin-top: 20px;
+    padding: 15px;
     border: 2px dashed rgba(255,255,255,0.4);
     border-radius: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     text-align: center;
-    opacity: 0.7;
-    font-size: 1.05rem;
+    background: rgba(255,255,255,0.05);
+}
+
+/* DIAGRAM IMAGE (SIZE CONTROL – IMPORTANT) */
+.diagram-img {
+    width: 500px;          /* 🔥 CHANGE THIS to resize diagram */
+    max-width: 80%;       /* Responsive on small screens */
+    height: auto;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto;
 }
