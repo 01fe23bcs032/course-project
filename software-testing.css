@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* FLOATING ICONS */
+.floating-icons span {
+    position: fixed;
+    font-size: 2rem;
+    opacity: 0.1;
+    animation: float 18s linear infinite;
+}
+
+@keyframes float {
+    from { top: 100%; }
+    to { top: -20%; }
+}
+
+.floating-icons span:nth-child(1){left:15%;}
+.floating-icons span:nth-child(2){left:40%;}
+.floating-icons span:nth-child(3){left:65%;}
+.floating-icons span:nth-child(4){left:85%;}
+
+/* LAYOUT */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 80px 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.page-title {
+    font-size: 3rem;
+}
+
+.subtitle {
+    margin: 10px 0 50px;
+    opacity: 0.85;
+}
+
+/* CARDS */
+.card {
+    background: rgba(255,255,255,0.12);
+    padding: 35px;
+    border-radius: 22px;
+    margin-bottom: 50px;
+    backdrop-filter: blur(12px);
+}
+
+.plan {
+    border-left: 6px solid #8ecae6;
+}
+
+h2 {
+    color: #ffd369;
+    margin-bottom: 25px;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+/* GRID */
+.grid-three {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+    gap: 25px;
+}
+
+.grid-four {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 20px;
+}
+
+/* MINI CARDS */
+.mini-card {
+    background: rgba(0,0,0,0.15);
+    padding: 20px;
+    border-radius: 16px;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 14px;
+    text-align: left;
+    font-size: 0.95rem;
+}
+
+thead {
+    border-bottom: 2px solid #ffd369;
+}
+
+tbody tr {
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+.pass {
+    background: #7ae582;
+    color: #203a43;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/* TOOLS */
+.tool-card {
+    background: rgba(0,0,0,0.15);
+    padding: 20px;
+    border-radius: 16px;
+}
