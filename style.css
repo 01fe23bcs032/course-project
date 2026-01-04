@@ -1,12 +1,13 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: "Segoe UI", sans-serif;
 }
 
 body {
-    margin: 0;
-    background: #fff9ec;
-    color: #1f2d3d;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #ffffff;
     overflow-x: hidden;
 }
 
@@ -14,7 +15,7 @@ body {
 .floating-icons span {
     position: fixed;
     font-size: 2rem;
-    opacity: 0.08;
+    opacity: 0.12;
     animation: float 18s linear infinite;
     z-index: 0;
 }
@@ -30,11 +31,11 @@ body {
     to { top: -20%; }
 }
 
-/* MAIN CONTAINER */
+/* CONTAINER */
 .container {
     max-width: 1100px;
     margin: auto;
-    padding: 60px 20px;
+    padding: 80px 20px;
     position: relative;
     z-index: 1;
 }
@@ -42,53 +43,49 @@ body {
 /* PAGE TITLE */
 .page-title {
     font-size: 3rem;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     position: relative;
 }
 
 .page-title::after {
     content: "";
-    width: 60px;
+    width: 70px;
     height: 4px;
-    background: #f4978e;
+    background: #ffd369;
     position: absolute;
     left: 0;
-    bottom: -10px;
+    bottom: -12px;
     border-radius: 2px;
 }
 
-/* PROBLEM STATEMENT CARD */
-.problem-card {
-    background: #fffdf6;
-    border-left: 6px solid #8ecae6;
+/* GLASS CARD */
+.card {
+    background: rgba(255, 255, 255, 0.12);
     padding: 35px;
-    border-radius: 18px;
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
     margin-bottom: 50px;
 }
 
+/* PROBLEM STATEMENT */
 .problem-card h2 {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     margin-bottom: 10px;
 }
 
 .problem-card h3 {
     font-size: 1.25rem;
+    color: #ffd369;
     margin-bottom: 20px;
-    color: #2c5364;
 }
 
 .problem-card p {
     font-size: 1.05rem;
     line-height: 1.8;
+    opacity: 0.95;
 }
 
 /* TEAM SECTION */
-.team-section {
-    background: #fffdf6;
-    padding: 35px;
-    border-radius: 18px;
-}
-
 .team-header {
     display: flex;
     justify-content: space-between;
@@ -97,16 +94,15 @@ body {
 }
 
 .team-header h2 {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
 }
 
 .team-badge {
-    background: #ffffff;
-    border: 1px solid #f4978e;
-    padding: 8px 16px;
+    padding: 8px 18px;
     border-radius: 20px;
+    border: 1px solid #ffd369;
+    color: #ffd369;
     font-size: 0.9rem;
-    color: #f4978e;
 }
 
 /* TABLE */
@@ -118,15 +114,15 @@ table {
 th {
     text-align: left;
     padding-bottom: 12px;
+    border-bottom: 2px solid #ffd369;
     font-size: 0.95rem;
-    color: #555;
-    border-bottom: 2px solid #f4978e;
+    opacity: 0.9;
 }
 
 td {
     padding: 14px 0;
     font-size: 1rem;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
 }
 
 tbody tr:last-child td {
