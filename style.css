@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #fff9ec;
+    color: #1f2d3d;
+    overflow-x: hidden;
+}
+
+/* FLOATING ICONS */
+.floating-icons span {
+    position: fixed;
+    font-size: 2rem;
+    opacity: 0.08;
+    animation: float 18s linear infinite;
+    z-index: 0;
+}
+
+.floating-icons span:nth-child(1) { left: 10%; animation-delay: 0s; }
+.floating-icons span:nth-child(2) { left: 30%; animation-delay: 4s; }
+.floating-icons span:nth-child(3) { left: 50%; animation-delay: 8s; }
+.floating-icons span:nth-child(4) { left: 70%; animation-delay: 12s; }
+.floating-icons span:nth-child(5) { left: 90%; animation-delay: 16s; }
+
+@keyframes float {
+    from { top: 100%; }
+    to { top: -20%; }
+}
+
+/* MAIN CONTAINER */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 20px;
+    position: relative;
+    z-index: 1;
+}
+
+/* PAGE TITLE */
+.page-title {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.page-title::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background: #f4978e;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    border-radius: 2px;
+}
+
+/* PROBLEM STATEMENT CARD */
+.problem-card {
+    background: #fffdf6;
+    border-left: 6px solid #8ecae6;
+    padding: 35px;
+    border-radius: 18px;
+    margin-bottom: 50px;
+}
+
+.problem-card h2 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.problem-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    color: #2c5364;
+}
+
+.problem-card p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+/* TEAM SECTION */
+.team-section {
+    background: #fffdf6;
+    padding: 35px;
+    border-radius: 18px;
+}
+
+.team-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.team-header h2 {
+    font-size: 1.6rem;
+}
+
+.team-badge {
+    background: #ffffff;
+    border: 1px solid #f4978e;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #f4978e;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+    padding-bottom: 12px;
+    font-size: 0.95rem;
+    color: #555;
+    border-bottom: 2px solid #f4978e;
+}
+
+td {
+    padding: 14px 0;
+    font-size: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
