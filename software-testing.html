@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Software Testing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="software-testing.css">
+</head>
+<body>
+
+<!-- FLOATING ICONS -->
+<div class="floating-icons">
+    <span>🧪</span>
+    <span>🔍</span>
+    <span>⚙️</span>
+    <span>📊</span>
+</div>
+
+<div class="container">
+
+    <!-- PAGE HEADER -->
+    <h1 class="page-title">Software Testing</h1>
+    <p class="subtitle">
+        Verification of system functionality, security, and performance.
+    </p>
+
+    <!-- TEST PLAN OVERVIEW -->
+    <section class="card plan">
+        <h2>📝 Test Plan Overview</h2>
+
+        <div class="grid-three">
+            <div class="mini-card">
+                <h3>Objective</h3>
+                <p>
+                    Validate that the booking system meets all functional
+                    requirements, ensures data integrity, and provides a
+                    seamless user experience across devices.
+                </p>
+            </div>
+
+            <div class="mini-card">
+                <h3>Scope</h3>
+                <p>
+                    User Authentication (Login/Register), Booking Management
+                    workflows, Database constraints, and Admin Dashboard
+                    functionality.
+                </p>
+            </div>
+
+            <div class="mini-card">
+                <h3>Strategy</h3>
+                <p>
+                    Hybrid approach using Manual Testing for UI/UX flows and
+                    API Testing (Postman) for backend logic validation.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEST CASES -->
+    <section class="section">
+        <h2>🧾 Test Cases</h2>
+
+        <!-- MODULE 1 -->
+        <div class="card">
+            <h3>🔐 Module 1: User Login</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>TC ID</th>
+                        <th>Description</th>
+                        <th>Test Steps</th>
+                        <th>Input Data</th>
+                        <th>Expected vs Actual</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>TC_LOGIN_01</td>
+                        <td>Successful Login</td>
+                        <td>Enter valid email & password</td>
+                        <td>Email, Password</td>
+                        <td>Redirect to Dashboard</td>
+                        <td><span class="pass">Pass</span></td>
+                    </tr>
+                    <tr>
+                        <td>TC_LOGIN_02</td>
+                        <td>Invalid Password</td>
+                        <td>Enter wrong password</td>
+                        <td>Wrong password</td>
+                        <td>Error message shown</td>
+                        <td><span class="pass">Pass</span></td>
+                    </tr>
+                    <tr>
+                        <td>TC_LOGIN_03</td>
+                        <td>Session Expiry</td>
+                        <td>Wait session timeout</td>
+                        <td>JWT Token</td>
+                        <td>Redirect to Login</td>
+                        <td><span class="pass">Pass</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- MODULE 2 -->
+        <div class="card">
+            <h3>📅 Module 2: View My Bookings</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>TC ID</th>
+                        <th>Description</th>
+                        <th>Test Steps</th>
+                        <th>Input Data</th>
+                        <th>Expected vs Actual</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>TC_VIEW_01</td>
+                        <td>View All Bookings</td>
+                        <td>Navigate to My Bookings</td>
+                        <td>User History</td>
+                        <td>Bookings displayed</td>
+                        <td><span class="pass">Pass</span></td>
+                    </tr>
+                    <tr>
+                        <td>TC_VIEW_02</td>
+                        <td>Cancel Booking</td>
+                        <td>Click Cancel</td>
+                        <td>Booking ID</td>
+                        <td>Status updated</td>
+                        <td><span class="pass">Pass</span></td>
+                    </tr>
+                    <tr>
+                        <td>TC_VIEW_03</td>
+                        <td>Filter Bookings</td>
+                        <td>Apply filters</td>
+                        <td>Date, Status</td>
+                        <td>Correct results</td>
+                        <td><span class="pass">Pass</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- TESTING TOOLS -->
+    <section class="card tools">
+        <h2>🛠️ Testing Tools</h2>
+
+        <div class="grid-four">
+            <div class="tool-card">
+                <h3>🚀 Postman</h3>
+                <p>API testing for authentication, booking, and admin endpoints.</p>
+            </div>
+
+            <div class="tool-card">
+                <h3>🧑‍💻 VS Code Debugger</h3>
+                <p>Step-through debugging for backend logic and API routes.</p>
+            </div>
+
+            <div class="tool-card">
+                <h3>🌐 Chrome DevTools</h3>
+                <p>UI inspection, JavaScript debugging, and performance audits.</p>
+            </div>
+
+            <div class="tool-card">
+                <h3>🧪 Jest</h3>
+                <p>Unit testing framework for backend logic and validation.</p>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
