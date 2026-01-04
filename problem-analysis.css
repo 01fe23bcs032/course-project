@@ -17,6 +17,7 @@ body {
     font-size: 2rem;
     opacity: 0.1;
     animation: float 20s linear infinite;
+    z-index: 0;
 }
 
 @keyframes float {
@@ -41,28 +42,30 @@ body {
 
 .page-title {
     font-size: 3rem;
+    margin-bottom: 10px;
 }
 
 .subtitle {
-    margin: 10px 0 40px;
+    margin: 10px 0 50px;
     opacity: 0.85;
 }
 
+/* SECTION SPACING */
 .section {
-    margin-bottom: 50px;
+    margin-bottom: 70px; /* 🔥 SPACE BETWEEN SPRINT SECTIONS */
 }
 
-/* GRID */
+/* GRID LAYOUTS */
 .grid-two {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
-    gap: 30px;
+    gap: 32px; /* 🔥 SPACE BETWEEN BOXES */
 }
 
 .grid-three {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-    gap: 30px;
+    gap: 32px; /* 🔥 SPACE BETWEEN BOXES */
 }
 
 /* CARD */
@@ -71,6 +74,11 @@ body {
     padding: 30px;
     border-radius: 18px;
     backdrop-filter: blur(12px);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px); /* subtle lift */
 }
 
 .card h2 {
@@ -101,11 +109,13 @@ ul li {
     margin-bottom: 10px;
 }
 
-/* SPRINT */
+/* SPRINT BLOCK */
 .sprint {
     position: relative;
+    margin-bottom: 60px; /* 🔥 SPACE BETWEEN DIFFERENT SPRINTS */
 }
 
+/* BADGE */
 .badge {
     position: absolute;
     top: 20px;
@@ -115,6 +125,7 @@ ul li {
     padding: 6px 14px;
     border-radius: 20px;
     font-size: 0.8rem;
+    font-weight: 600;
 }
 
 /* STORIES */
@@ -124,10 +135,13 @@ ul li {
     border-radius: 14px;
 }
 
+/* PRIORITY TAGS */
 .priority {
+    display: inline-block;
     padding: 4px 10px;
     border-radius: 12px;
     font-size: 0.75rem;
+    margin-bottom: 8px;
 }
 
 .high { background:#f4978e; }
@@ -148,7 +162,9 @@ ul li {
     align-items: center;
     justify-content: center;
     opacity: 0.7;
+    border-radius: 16px;
 }
+
 .diagram-container {
     margin-top: 25px;
     padding: 20px;
