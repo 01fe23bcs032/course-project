@@ -95,8 +95,8 @@ body {
 
 /* DIAGRAM IMAGE (SIZE CONTROL – IMPORTANT) */
 .diagram-img {
-    width: 500px;          /* 🔥 CHANGE THIS to resize diagram */
-    max-width: 80%;       /* Responsive on small screens */
+    width: 300px;          /* 🔥 CHANGE THIS to resize diagram */
+    max-width: 100%;       /* Responsive on small screens */
     height: auto;
     border-radius: 12px;
     display: block;
