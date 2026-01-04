@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* FLOATING ICONS */
+.floating-icons span {
+    position: fixed;
+    font-size: 2rem;
+    opacity: 0.1;
+    animation: float 20s linear infinite;
+    z-index: 0;
+}
+
+@keyframes float {
+    from { top: 100%; }
+    to { top: -20%; }
+}
+
+.floating-icons span:nth-child(1){ left: 10%; }
+.floating-icons span:nth-child(2){ left: 30%; }
+.floating-icons span:nth-child(3){ left: 50%; }
+.floating-icons span:nth-child(4){ left: 70%; }
+.floating-icons span:nth-child(5){ left: 90%; }
+
+/* LAYOUT */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 80px 20px;
+    position: relative;
+    z-index: 1;
+}
+
+/* HEADINGS */
+.page-title {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.page-title::after {
+    content: "";
+    width: 70px;
+    height: 4px;
+    background: #ffd369;
+    display: block;
+    margin-top: 10px;
+    border-radius: 2px;
+}
+
+.subtitle {
+    opacity: 0.85;
+    margin-bottom: 50px;
+}
+
+/* DIAGRAM SECTIONS */
+.diagram-section {
+    margin-bottom: 60px;
+    background: rgba(255,255,255,0.12);
+    padding: 35px;
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+}
+
+.diagram-section h2 {
+    font-size: 1.6rem;
+    color: #ffd369;
+    margin-bottom: 10px;
+}
+
+.desc {
+    font-size: 1.05rem;
+    opacity: 0.9;
+    margin-bottom: 25px;
+    line-height: 1.7;
+}
+
+/* DIAGRAM PLACEHOLDER */
+.diagram-box {
+    height: 320px;
+    border: 2px dashed rgba(255,255,255,0.4);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0.7;
+    font-size: 1.05rem;
+}
