@@ -138,17 +138,27 @@ tbody tr:last-child td {
 
 .nav-btn {
     text-decoration: none;
-    text-align: center;
-    padding: 16px 20px;
-    font-size: 1rem;
-    font-weight: 600;
+
+    /* CENTER TEXT PERFECTLY */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px 24px;
+
+    /* FONT IMPROVEMENTS */
+    font-size: 1.15rem;        /* bigger text */
+    font-weight: 700;          /* bold */
+    letter-spacing: 0.5px;
+
     color: #ffffff;
+    text-align: center;
 
-    background: rgba(255, 255, 255, 0.14);
-    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.16);
+    backdrop-filter: blur(12px);
 
-    border-radius: 18px;
-    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
 
     transition: all 0.3s ease;
     position: relative;
@@ -157,10 +167,10 @@ tbody tr:last-child td {
 
 /* Hover effect */
 .nav-btn:hover {
-    background: rgba(255, 211, 105, 0.18);
+    background: rgba(255, 211, 105, 0.22);
     border-color: #ffd369;
     color: #ffd369;
-    transform: translateY(-4px);
+    transform: translateY(-5px);
 }
 
 /* Subtle glow on hover */
