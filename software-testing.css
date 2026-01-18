@@ -124,3 +124,31 @@ tbody tr {
     padding: 20px;
     border-radius: 16px;
 }
+/* IMPROVEMENTS SECTION */
+.improvements h2 {
+    margin-bottom: 20px;
+}
+
+.improvement-list {
+    list-style: none;            /* remove default bullets */
+    padding-left: 0;
+}
+
+.improvement-list li {
+    background: rgba(255, 255, 255, 0.08);
+    margin-bottom: 14px;
+    padding: 14px 18px;
+    border-radius: 14px;
+    line-height: 1.6;
+    font-size: 1.05rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+/* Hover effect */
+.improvement-list li:hover {
+    background: rgba(255, 211, 105, 0.18);
+    transform: translateX(6px);
+}
