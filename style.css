@@ -130,30 +130,36 @@ tbody tr:last-child td {
 }
 /* PROJECT NAVIGATION */
 .project-nav {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-    margin-bottom: 60px;
+    text-align: center;
 }
 
+.nav-title {
+    font-size: 1.7rem;
+    margin-bottom: 30px;
+}
+
+/* BUTTON GRID */
+.nav-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+}
+
+/* BUTTON STYLE */
 .nav-btn {
     text-decoration: none;
 
-    /* CENTER TEXT PERFECTLY */
     display: flex;
     align-items: center;
     justify-content: center;
 
     padding: 20px 24px;
 
-    /* FONT IMPROVEMENTS */
-    font-size: 1.15rem;        /* bigger text */
-    font-weight: 700;          /* bold */
+    font-size: 1.15rem;
+    font-weight: 700;
     letter-spacing: 0.5px;
 
     color: #ffffff;
-    text-align: center;
-
     background: rgba(255, 255, 255, 0.16);
     backdrop-filter: blur(12px);
 
@@ -161,29 +167,12 @@ tbody tr:last-child td {
     border: 1px solid rgba(255, 255, 255, 0.3);
 
     transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
 }
 
-/* Hover effect */
+/* HOVER EFFECT */
 .nav-btn:hover {
-    background: rgba(255, 211, 105, 0.22);
+    background: rgba(255, 211, 105, 0.25);
     border-color: #ffd369;
     color: #ffd369;
     transform: translateY(-5px);
-}
-
-/* Subtle glow on hover */
-.nav-btn::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: 18px;
-    box-shadow: 0 0 25px rgba(255, 211, 105, 0.25);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.nav-btn:hover::after {
-    opacity: 1;
 }
